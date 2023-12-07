@@ -1,0 +1,56 @@
+@import "../../styles/vars.scss";
+
+
+form {
+  align-items: center;
+  background-color: white;
+  margin-top: 160px;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    color: $primary;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid $bg-accent;
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+      border-color: $accent;
+    }
+  }
+
+  button {
+    background-color: $accent;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+
+  p {
+    margin-top: 15px;
+    color: $foreground;
+
+    a {
+      color: $accent;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
